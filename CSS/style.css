@@ -51,7 +51,9 @@ li {
     text-align: center;
 }
 
+
 .cart-row{
+    background-color: var(--subtle);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,6 +63,7 @@ li {
 footer{
     grid-area: f;
     text-align: center;
+    
 }
 
 
