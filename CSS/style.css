@@ -24,7 +24,7 @@
     background-color: var(--surface);
     display: grid;
     grid-template-columns: minmax(0ppx, auto) 1fr;
-    grid-template-rows: 50px 1fr 1fr 50px;
+    grid-template-rows: 60px 1fr 1fr 50px;
     grid-template-areas: 
     'h'
     'm'
@@ -33,23 +33,67 @@
 
 nav{
     grid-area: h;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+li {
+    text-decoration: none;
+    list-style-type: none;
 }
 
 .wrapper{
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     grid-area: m;
+    text-align: center;
 }
+
+.cart-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 footer{
     grid-area: f;
+    text-align: center;
 }
 
 
 h1{
     font-family: 'Indie Flower', cursive;
     font-size: 4rem;
+    background-color: var(--inactive);
+}
+
+h2{
+    font-size: 2.5rem;
 }
 
 @media screen and (min-width: 640px) {
     
+    .wrapper{
+        font-size: 1.5rem;
+        grid-area: m;
+    }
+    
+    .shop-items{
+        display: grid;
+        grid-template-areas: 
+        'a a'
+        'a a';
+    }
+    
+    .section-item{
+        grid-area: 'a';
+    }
+    
+    
+    h2{
+        font-size: 2rem;
+    }
 }
