@@ -20,6 +20,36 @@
     font-family: 'RocknRoll One', sans-serif;
 }
 
+.container{
+    background-color: var(--surface);
+    display: grid;
+    grid-template-columns: minmax(0ppx, auto) 1fr;
+    grid-template-rows: 50px 1fr 1fr 50px;
+    grid-template-areas: 
+    'h'
+    'm'
+    'f';
+}
+
+nav{
+    grid-area: h;
+}
+
+.wrapper{
+    font-size: 1.5rem;
+    grid-area: m;
+}
+
+footer{
+    grid-area: f;
+}
+
+
 h1{
     font-family: 'Indie Flower', cursive;
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 640px) {
+    
 }
